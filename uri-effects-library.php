@@ -24,6 +24,9 @@ function uri_el_enqueues() {
 	wp_register_style( 'uriel-css', plugins_url( '/css/el.built.css', __FILE__ ) );
 	wp_enqueue_style( 'uriel-css' );
 
+	wp_register_script( 'uriel-js', plugins_url( '/js/el.built.js', __FILE__ ) );
+	wp_enqueue_script( 'uriel-js' );
+
 }
 add_action( 'wp_enqueue_scripts', 'uri_el_enqueues' );
 
